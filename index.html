@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Heroe y Villanos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="Persona.js"></script>
+    <script src="SuperHeroe.js"></script>
+    <script src="Villano.js"></script>
+    
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <h1>Guardar Heroe</h1>
+                    <label for="">ingrese el nombre del heroe</label><input type="text" id="HName"><br>
+                    <label for="">ingrese la edad del heroe</label><input type="text" id="HEdad"><br>
+                    <label for="">ingrese el univeros del heroe</label><input type="text" id="HUniverso"><br>
+                    <label for="">ingrese el Poder del heroe</label><input type="text" id="HPoder"><br>
+                    <label for="">ingrese el Daño del heroe</label><input type="text" id="HDano"><br>
+                    <label for="">ingrese el Nivel de valentia del heroe</label><input type="text" id="HValentia"><br>
+                    <label for="">ingrese el Reconicimiento del heroe</label><input type="text" id="HReconicimiento"><br>
+                    <button onclick="guardarSuperHeroe()">guardar</button>
+                </div>
+            </td>
+        
+
+     
+            <td>
+                <div><table class="table">
+                    <thead class="table">
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Universo</th>
+                        <th>Poder</th>
+                        <th>Daño</th>
+                        <th>NivelDeValentia</th>
+                        <th>Reconicimiento</th>
+                    </thead>
+                    <tbody id="tHero"></tbody>
+                </table>
+                </div>
+            </td>
+
+        </tr>
+    
+        <tr>
+            <td>
+                <div>
+                    <br> <br>
+                    <h1>Guardar Villano</h1>
+                    <label for="">ingrese el nombre del villano</label><input type="text" id="VName"><br>
+                    <label for="">ingrese la edad del villano</label><input type="text" id="VEdad"><br>
+                    <label for="">ingrese el univeros del villano</label><input type="text" id="VUniverso"><br>
+                    <label for="">ingrese el reputacion del villano</label><input type="text" id="VReputacion"><br>
+                    <label for="">ingrese el Nivel de busquieda villano</label><input type="text" id="VBusqueda"><br>
+                   <label for="">elija cual es su Nemesis proncipal</label> <select name="Super" id="SuperHeroe"></select><br>
+                  <button onclick="guardarVillano()">guardar</button>
+                </div>
+            </td>
+            
+
+            <td>
+                <div>
+                    <table class="table">
+                    <thead class="table">
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Universo</th>
+                        <th>reputacion</th>
+                        <th>NivelDeBusquieda</th>
+                        <th>Nemesis</th>
+
+                    </thead>
+                    <tbody id="tVillano"></tbody>
+                </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+    <script src="Tool.js"></script>
+    <script src="funciones.js"></script>
+</body>
+
+</html>
